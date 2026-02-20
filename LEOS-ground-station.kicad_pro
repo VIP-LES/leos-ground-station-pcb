@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 2.92,
-          "width": 1.27
+          "height": 0.4064,
+          "width": 0.3048
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -65,20 +65,8 @@
       ],
       "drc_exclusions": [
         [
-          "net_conflict|123525000|72365000|39964c85-1dec-4829-82f9-87db177a0101|00000000-0000-0000-0000-000000000000",
-          "The SOIC version has no exposed pad."
-        ],
-        [
-          "net_conflict|132475000|70730000|0f048bba-e992-4082-b605-597fd50f4c5e|00000000-0000-0000-0000-000000000000",
-          "The SOIC version has no exposed pad."
-        ],
-        [
-          "silk_edge_clearance|200000000|63000000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|b72c7fc0-d94a-454b-a952-961bf612419e",
-          ""
-        ],
-        [
-          "silk_edge_clearance|200000000|71220000|90ef5eb2-bbc7-4650-a41f-c2e13f7109e2|044d4a62-4017-4787-9e81-87351c7f3fab",
-          ""
+          "unconnected_items|126500000|104140000|F.Cu|4|c77f2433-622b-4434-936e-9d6dc18b4801|510fd4bc-aeaa-4498-8a29-345ddb58a0a8",
+          "Internally Connected"
         ]
       ],
       "meta": {
@@ -267,7 +255,24 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "multiple_net_names|1028700|266700|cb3e7470-20e4-45d0-aa85-605169bd278d|86c30060-1fed-47d4-8a47-d6f51386289a|/3703ddf2-8141-438d-86a8-1eaec9672d0d/2e39ea4d-1e4c-405f-8e45-0043ee9bd0e6|/3703ddf2-8141-438d-86a8-1eaec9672d0d/2e39ea4d-1e4c-405f-8e45-0043ee9bd0e6|/3703ddf2-8141-438d-86a8-1eaec9672d0d/2e39ea4d-1e4c-405f-8e45-0043ee9bd0e6",
+        ""
+      ],
+      [
+        "multiple_net_names|1028700|673100|6f220944-367f-436c-bb13-695bb6c38216|785966ec-952b-4242-a34c-23b9d4021cc5|/3703ddf2-8141-438d-86a8-1eaec9672d0d/2e39ea4d-1e4c-405f-8e45-0043ee9bd0e6|/3703ddf2-8141-438d-86a8-1eaec9672d0d/2e39ea4d-1e4c-405f-8e45-0043ee9bd0e6|/3703ddf2-8141-438d-86a8-1eaec9672d0d/2e39ea4d-1e4c-405f-8e45-0043ee9bd0e6",
+        ""
+      ],
+      [
+        "multiple_net_names|1028700|673100|cb3e7470-20e4-45d0-aa85-605169bd278d|785966ec-952b-4242-a34c-23b9d4021cc5|/3703ddf2-8141-438d-86a8-1eaec9672d0d/2e39ea4d-1e4c-405f-8e45-0043ee9bd0e6|/3703ddf2-8141-438d-86a8-1eaec9672d0d/2e39ea4d-1e4c-405f-8e45-0043ee9bd0e6|/3703ddf2-8141-438d-86a8-1eaec9672d0d/2e39ea4d-1e4c-405f-8e45-0043ee9bd0e6",
+        "idk"
+      ],
+      [
+        "pin_to_pin|673100|368300|c83470f6-e9d0-41a7-9938-1c30a88dacbe|c0d8cab4-9355-4aaa-9bed-c0b65b2f5c76|/3703ddf2-8141-438d-86a8-1eaec9672d0d/2e39ea4d-1e4c-405f-8e45-0043ee9bd0e6|/3703ddf2-8141-438d-86a8-1eaec9672d0d/2e39ea4d-1e4c-405f-8e45-0043ee9bd0e6|/3703ddf2-8141-438d-86a8-1eaec9672d0d/2e39ea4d-1e4c-405f-8e45-0043ee9bd0e6",
+        "Shared bus"
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -492,7 +497,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LEOS-stack-template.kicad_pro",
+    "filename": "LEOS-ground-station.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -514,25 +519,6 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
-      },
-      {
-        "clearance": 0.1,
-        "name": "5V",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.75,
-        "via_drill": 0.3
-      },
-      {
-        "clearance": 0.2,
-        "diff_pair_width": 0.25,
-        "name": "CAN",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25
       }
     ],
     "meta": {
@@ -560,10 +546,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "/home/matthewlyon/Projects/LEOS-stack-template/LEOS-stack-template-rd1/",
+      "plot": "./",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "LEOS-ground-station.step",
       "svg": "",
       "vrml": ""
     },
@@ -675,11 +661,17 @@
           "label": "Sim.Pins",
           "name": "Sim.Pins",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
@@ -730,12 +722,16 @@
       "Root"
     ],
     [
-      "5dc8edec-1b34-44a9-a38e-40874919c30b",
-      "CANbus"
+      "2e39ea4d-1e4c-405f-8e45-0043ee9bd0e6",
+      "RF"
     ],
     [
-      "341d819d-3d1a-4f8b-94f1-4c6aaa16d806",
-      "Connectors"
+      "a4358fac-9f34-4739-889d-04f7ee29de9b",
+      "IO"
+    ],
+    [
+      "caad5176-0121-4ffd-9fb3-dbf5f7b37db5",
+      "Power"
     ]
   ],
   "text_variables": {}
